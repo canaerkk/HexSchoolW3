@@ -1,6 +1,10 @@
 $primary:#AA0601;
 $secondary:#DEE2E6;
 
+.container{
+    max-width: 1111px;
+    margin: 0 auto;
+}
 /*
 header 區塊 PC版
 */
@@ -9,8 +13,6 @@ header 區塊 PC版
     display: flex;
 }
 .bannerimg{
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
     height: 49px;
     width: 100%;
     margin: 30px 0 30px 80px;
@@ -23,17 +25,93 @@ header 區塊 PC版
 .menu-item{
     min-width: 80px;
     margin-right: 80px;
+    a{
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        line-height: 30px;
+        &:hover{
+            color: $secondary;
+        }
+    }
 }
 .menu-item-last{
     margin-right: 88px;
 }
-.menu-item a{
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-    line-height: 30px;
-    &:hover{
-        color: $secondary;
+
+/*
+footer區塊 PC版
+*/
+.footer{
+    background-color:$primary;
+}
+
+.footerinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-menu{
+    display: flex;
+}
+.footer-menu-item{
+    margin-right: 48px;
+    a{
+        color: #fff;
+        text-decoration: none;
+        line-height: 24px;
+        &:hover{
+            color: $secondary;
+        }
     }
+    
+}
+.soical{
+    display: flex;
+    align-items: center;
+    margin: 32px 0 24px 0;
+    li{
+        margin-left: 32px;
+    }
+}
+.contactinfo{
+    padding-bottom: 21px;
+    border-bottom: 1px solid #FFF;
+    li{
+        img{
+            height: 36px;
+        }
+        a{
+            padding-left: 22px;
+            color:#fff;
+            font-size: 36px;
+            line-height: 54px;
+            text-decoration: none;
+        }
+    }
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        color: #fff;
+        line-height: 24px;
+        padding: 20px 0 27px 0;
+    }
+}
+.copyright-zh{
+    display: flex;
+}
+.copyright-zh-item{
+    a{
+        color: #fff;
+        text-decoration: none;
+        padding-left: 48px;
+        &:hover{
+            color: $secondary;
+        }
+    }
+    
 }
