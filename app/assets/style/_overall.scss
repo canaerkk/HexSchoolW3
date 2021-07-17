@@ -1,0 +1,39 @@
+$primary:#AA0601;
+$secondary:#DEE2E6;
+
+/*
+header 區塊 PC版
+*/
+.header{
+    background-color: $primary;
+    display: flex;
+}
+.bannerimg{
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    height: 49px;
+    width: 100%;
+    margin: 30px 0 30px 80px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.menu-item{
+    min-width: 80px;
+    margin-right: 80px;
+}
+.menu-item-last{
+    margin-right: 88px;
+}
+.menu-item a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    &:hover{
+        color: $secondary;
+    }
+}
