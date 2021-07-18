@@ -106,6 +106,30 @@ header 區塊 Tablet版
     margin-right: 40px; } }
 
 /*
+header 區塊 Mobile版
+*/
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .bannerimg {
+    text-align: center;
+    margin: 10px auto; }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .menu-item {
+    min-width: 50%;
+    margin: 0;
+    text-align: center;
+    height: 45px;
+    border: 1px solid #fff; }
+    .menu-item a {
+      line-height: 45px; } }
+
+/*
 footer區塊 PC版
 */
 .footer {
@@ -120,7 +144,10 @@ footer區塊 PC版
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #FFF; }
 
 .footer-menu {
   display: -webkit-box;
@@ -148,8 +175,7 @@ footer區塊 PC版
     margin-left: 32px; }
 
 .contactinfo {
-  padding-bottom: 21px;
-  border-bottom: 1px solid #FFF; }
+  padding-bottom: 21px; }
   .contactinfo li img {
     height: 36px; }
   .contactinfo li a {
@@ -197,7 +223,8 @@ footer區塊 Tablet版
   .soical-item img {
     height: 24px; }
   .contactinfo {
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    width: 100%; }
     .contactinfo li img {
       height: 18px; }
     .contactinfo li a {
@@ -206,5 +233,47 @@ footer區塊 Tablet版
       line-height: 30px; }
   .copyright-zh-item a {
     padding-left: 24px; } }
+
+/*
+footer區塊 Mobile版
+*/
+@media (max-width: 767px) {
+  .footerinfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .footer-menu {
+    display: none; }
+  .contactinfo {
+    width: 50%;
+    padding-top: 25px; }
+    .contactinfo li a {
+      padding: 0 0 0 7.5px;
+      font-size: 16px; }
+  .soical {
+    margin-top: 0; }
+    .soical li {
+      margin-left: 24px; }
+  .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 16px; }
+    .copyright h3 {
+      padding-bottom: 8px; }
+  .copyright-zh {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .copyright-zh-item {
+    padding: 0 0 8px 0; }
+    .copyright-zh-item a {
+      padding: 0; } }
 
 /*# sourceMappingURL=all.css.map */
