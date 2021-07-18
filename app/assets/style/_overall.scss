@@ -54,6 +54,31 @@ header 區塊 Tablet版
     }
 }
 /*
+header 區塊 Mobile版
+*/
+@media (max-width:767px){
+    .header{
+        flex-direction: column;
+    }
+    .bannerimg{
+        text-align: center;
+        margin: 10px auto;
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .menu-item{
+        min-width: 50%;
+        margin: 0;
+        text-align: center;
+        height: 45px;
+        border: 1px solid #fff;
+        a{
+            line-height: 45px;
+        }
+    }
+}
+/*
 footer區塊 PC版
 */
 .footer{
@@ -64,6 +89,8 @@ footer區塊 PC版
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #FFF;
 }
 .footer-menu{
     display: flex;
@@ -90,7 +117,6 @@ footer區塊 PC版
 }
 .contactinfo{
     padding-bottom: 21px;
-    border-bottom: 1px solid #FFF;
     li{
         img{
             height: 36px;
@@ -144,6 +170,7 @@ footer區塊 Tablet版
     }
     .contactinfo{
         padding-bottom: 16px;
+        width: 100%;
         li{
             img{
                 height: 18px;
@@ -160,5 +187,49 @@ footer區塊 Tablet版
             padding-left: 24px;
         }
         
+    }
+}
+/*
+footer區塊 Mobile版
+*/
+@media (max-width:767px) {
+    .footerinfo{
+        flex-direction: row-reverse;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .contactinfo{
+        width: 50%;
+        padding-top: 25px;
+        li{
+            a{
+                padding: 0 0 0 7.5px;
+                font-size: 16px;
+            }
+        }
+    }
+    .soical{
+        margin-top: 0;
+        li{
+            margin-left: 24px;
+        }
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: flex-start;
+        h3{
+            padding-bottom: 8px;
+        }
+        padding-bottom: 16px;
+    }
+    .copyright-zh{
+        flex-direction: column;
+    }
+    .copyright-zh-item{
+        padding: 0 0 8px 0;
+        a{
+            padding: 0;
+        }
     }
 }
