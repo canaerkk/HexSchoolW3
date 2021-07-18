@@ -39,7 +39,20 @@ header 區塊 PC版
 .menu-item-last{
     margin-right: 88px;
 }
-
+/*
+header 區塊 Tablet版
+*/
+@media (max-width:992px) {
+    .container{
+        width: 92%;
+    }
+    .bannerimg{
+        margin-left: 39px;    
+    }
+    .menu-item{
+        margin-right: 40px;
+    }
+}
 /*
 footer區塊 PC版
 */
@@ -109,9 +122,43 @@ footer區塊 PC版
         color: #fff;
         text-decoration: none;
         padding-left: 48px;
+        line-height: 21px;
+        font-size: 14px;
         &:hover{
             color: $secondary;
         }
     }
     
+}
+/*
+footer區塊 Tablet版
+*/
+@media (max-width:992px){
+    .footer-menu-item{
+        margin-right: 40px;
+    }
+    .soical-item{
+        img{
+            height: 24px;
+        }
+    }
+    .contactinfo{
+        padding-bottom: 16px;
+        li{
+            img{
+                height: 18px;
+            }
+            a{
+                padding-left: 11px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .copyright-zh-item{
+        a{
+            padding-left: 24px;
+        }
+        
+    }
 }
