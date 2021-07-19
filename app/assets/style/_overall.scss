@@ -200,7 +200,7 @@ footer區塊 Mobile版
         display: none;
     }
     .contactinfo{
-        width: 50%;
+        width: 59%;
         padding-top: 25px;
         li{
             a{
@@ -214,6 +214,9 @@ footer區塊 Mobile版
         li{
             margin-left: 24px;
         }
+    }
+    li.first{
+        margin-left: 0;
     }
     .copyright{
         flex-direction: column;
