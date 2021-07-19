@@ -1,0 +1,12 @@
+$primary:#9F1213;
+
+/*
+    每頁頁面的Title,或其他會用到的地方
+*/
+.pageTitle{
+    font-size: 48px;
+    line-height: 80px;
+    padding-left: 16px;
+    border-left: 8px solid $primary;
+    margin: 96px 0 60px 0;
+}
