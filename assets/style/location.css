@@ -9,4 +9,68 @@
   border-left: 8px solid #9F1213;
   margin: 96px 0 60px 0; }
 
+.select-style {
+  min-width: 60px; }
+  .select-style label {
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: 20px; }
+
+.storecube {
+  background-image: url(../images/locate1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.storeitem {
+  width: 324px;
+  height: 45px;
+  border: 1px solid #CED4DA;
+  line-height: 26px;
+  font-size: 18px;
+  margin-bottom: 32px; }
+
+.store-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.store-item {
+  width: 30%;
+  margin: 0 2.7% 2.7% 0; }
+  .store-item h3 {
+    line-height: 36px;
+    font-size: 24px;
+    padding: 12px 0 12px 24px;
+    border: 1px solid #00000020; }
+
+.store-info {
+  border: 1px solid #00000020; }
+  .store-info li {
+    line-height: 30px;
+    font-size: 20px;
+    margin: 7% 7%; }
+    .store-info li img {
+      height: 18px; }
+    .store-info li a {
+      text-decoration: none;
+      color: #000; }
+      .store-info li a:hover {
+        color: #CED4DA; }
+
+.storelink {
+  display: block;
+  color: #fff;
+  background: #000;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  line-height: 27px;
+  font-size: 19px; }
+  .storelink:hover {
+    color: #CED4DA; }
+
 /*# sourceMappingURL=location.css.map */

@@ -54,6 +54,10 @@ table {
 body {
   font-family: 'Noto Sans TC','Roboto', sans-serif; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .container {
   max-width: 1111px;
   margin: 0 auto; }
