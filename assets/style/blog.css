@@ -23,6 +23,9 @@
     line-height: 40px;
     margin: 28px 0 24px 0; } }
 
+/*
+    BLOG PC VER
+*/
 .blog-list {
   margin-bottom: 96px; }
 
@@ -67,6 +70,7 @@
     display: block;
     text-align: right;
     text-decoration: none;
+    text-transform: uppercase;
     color: #650300;
     font-weight: bold;
     line-height: 54px;
@@ -85,18 +89,83 @@
   .pager li {
     border: 1px #555555 solid; }
     .pager li a {
+      color: #555555;
       display: block;
       line-height: 29px;
       font-size: 19px;
       padding: 9.5px 16px;
       text-decoration: none; }
 
-.active {
+li.active {
   background: #000; }
-  .active a {
+  li.active a {
     color: #fff; }
 
 .next-active {
   background: #F2F2F2; }
+
+@media (max-width: 992px) {
+  .blog-list {
+    margin-bottom: 64px; }
+  .blog-item {
+    margin-bottom: 24px; }
+    .blog-item img {
+      height: 208px; }
+  .eng {
+    font-size: 16px; }
+  .date {
+    font-size: 14px; }
+  .blog-info h3 {
+    font-size: 20px;
+    margin-bottom: 0; }
+  .blog-info p {
+    line-height: 21px;
+    font-size: 14px; }
+  .blog-info a {
+    display: inline;
+    text-transform: lowercase;
+    color: #555555;
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 14px; }
+    .blog-info a:hover {
+      color: #650300; }
+  .pager {
+    margin-bottom: 96px; }
+    .pager li a {
+      line-height: 27px;
+      font-size: 18px;
+      padding: 4.5px 12px; } }
+
+@media (max-width: 767px) {
+  .blog-list {
+    margin-bottom: 50px; }
+  .blog-item {
+    margin-bottom: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .blog-item img {
+      width: 100%;
+      height: auto; }
+  .eng {
+    font-size: 14px; }
+  .blog-info {
+    width: 100%;
+    padding: 0; }
+    .blog-info h3 {
+      font-size: 16px; }
+    .blog-info p {
+      display: none; }
+    .blog-info a {
+      display: inline;
+      text-transform: lowercase;
+      color: #555555;
+      font-weight: bold;
+      line-height: 21px;
+      font-size: 14px; }
+      .blog-info a:hover {
+        color: #650300; } }
 
 /*# sourceMappingURL=blog.css.map */
