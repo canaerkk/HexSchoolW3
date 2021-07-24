@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+    每頁頁面的Title,或其他會用到的地方
+*/
+.pageTitle {
+  font-size: 48px;
+  line-height: 80px;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin: 96px 0 60px 0;
+  font-weight: bold; }
+
+@media (max-width: 992px) {
+  .pageTitle {
+    border-left: 4px solid #9F1213;
+    margin: 60px 0 40px 0;
+    line-height: 67px; } }
+
+@media (max-width: 767px) {
+  .pageTitle {
+    font-size: 28px;
+    padding-left: 8px;
+    line-height: 40px;
+    margin: 28px 0 24px 0; } }
+
+.blog-list {
+  margin-bottom: 96px; }
+
+.blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px; }
+
+.eng {
+  display: block;
+  font-size: 20px;
+  line-height: 30px; }
+
+.date {
+  display: block;
+  line-height: 24px;
+  color: #00000070; }
+
+.blog-info {
+  padding-left: 30px; }
+  .blog-info h3 {
+    color: #650300;
+    line-height: 63px;
+    font-size: 32px;
+    margin-bottom: 2px; }
+  .blog-info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .blog-info p {
+    color: #555555;
+    line-height: 30px;
+    font-size: 20px; }
+  .blog-info a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #650300;
+    font-weight: bold;
+    line-height: 54px;
+    font-size: 36px; }
+    .blog-info a:hover {
+      color: #555555; }
+
+.pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 160px; }
+  .pager li {
+    border: 1px #555555 solid; }
+    .pager li a {
+      display: block;
+      line-height: 29px;
+      font-size: 19px;
+      padding: 9.5px 16px;
+      text-decoration: none; }
+
+.active {
+  background: #000; }
+  .active a {
+    color: #fff; }
+
+.next-active {
+  background: #F2F2F2; }
+
+/*# sourceMappingURL=blog.css.map */
