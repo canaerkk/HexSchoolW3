@@ -3,6 +3,10 @@
 $blogtheme:#650300;
 $blogtheme-gray:#555555;
 
+
+/*
+    BLOG PC VER
+*/
 .blog-list{
     margin-bottom: 96px;
 }
@@ -42,6 +46,7 @@ $blogtheme-gray:#555555;
         display: block;
         text-align: right;
         text-decoration: none;
+        text-transform: uppercase;
         color: $blogtheme;
         font-weight: bold;
         line-height: 54px;
@@ -58,6 +63,7 @@ $blogtheme-gray:#555555;
     li{
         border: 1px $blogtheme-gray solid;
         a{
+            color: $blogtheme-gray;
             display: block;
             line-height: 29px;
             font-size: 19px;
@@ -66,7 +72,7 @@ $blogtheme-gray:#555555;
         }
     }
 }
-.active{
+li.active{
     background: #000;
     a{
         color: #fff;
@@ -74,4 +80,89 @@ $blogtheme-gray:#555555;
 }
 .next-active{
     background: #F2F2F2;
+}
+@media (max-width:992px) {
+    .blog-list{
+        margin-bottom: 64px;
+    }
+    .blog-item{
+        margin-bottom: 24px;
+        img{
+            height: 208px;
+        }
+    }
+    .eng{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .blog-info{
+        h3{
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        p{
+            line-height: 21px;
+            font-size: 14px;
+        }
+        a{
+            display: inline;
+            text-transform: lowercase;
+            color: $blogtheme-gray;
+            font-weight: bold;
+            line-height: 21px;
+            font-size: 14px;
+            &:hover{
+                color:$blogtheme;
+            }
+        }
+    }
+    .pager{
+        margin-bottom: 96px;
+        li{
+            a{
+                line-height: 27px;
+                font-size: 18px;
+                padding: 4.5px 12px;
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    .blog-list{
+        margin-bottom: 50px;
+    }
+    .blog-item{
+        margin-bottom: 24px;
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .eng{
+        font-size: 14px;
+    }
+    .blog-info{
+        width: 100%;
+        padding: 0;
+        h3{
+            font-size: 16px;
+        }
+        p{
+            display: none;
+        }
+        a{
+            display: inline;
+            text-transform: lowercase;
+            color: $blogtheme-gray;
+            font-weight: bold;
+            line-height: 21px;
+            font-size: 14px;
+            &:hover{
+                color:$blogtheme;
+            }
+        }
+    }
 }
