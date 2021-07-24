@@ -20,3 +20,11 @@
 .store-item{
     width: 100%;
 }
+@media (max-width:992px) {
+    .storesheet{
+        flex-direction: column;
+    }
+    .store-item{
+        display: flex;
+    }
+}
