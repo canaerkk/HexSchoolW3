@@ -1,0 +1,140 @@
+$blogtheme:#650300;
+$hashtagtheme:#AA0601;
+
+.subtitle{
+    background-color: $blogtheme;
+}
+.submenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+        display: block;
+        text-decoration: none;
+        color: #FFF;
+        line-height: 24px;
+        font-size: 20px;
+        padding: 12px 48px 14px 0;
+    }
+}
+.searchicon{
+    margin-left: auto;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.breadcrumbs{
+    width: 100%;
+    a{
+        line-height: 24px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+a.currentpage{
+    color: $hashtagtheme;
+}
+a.hashtag{
+    text-decoration: none;
+    color: $hashtagtheme;
+    padding-right: 16px;
+    width: 100%;
+    &::before{
+        content:"#";
+    }
+}
+.article{
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+.article-hashtag{
+    display: flex;
+    width: 100%;
+}
+
+.content-left{
+    width: 74%;
+    h2{
+        line-height: 95px;
+        font-size: 48px;
+    }
+}
+.article-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eng{
+    line-height: 42px;
+    font-size: 28px;
+}
+.date{
+    line-height: 24px;
+    color:  #6C6C6C;
+}
+.article{
+    p{
+        padding: 24px 0 40px 0;
+        line-height: 30px;
+        font-size: 20px;
+        color: #0A0A0A60;
+    }
+}
+.sharetag{
+    display: flex;
+    align-items: center;
+    a{
+        padding-right: 20px;
+        line-height: 30px;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}
+.pager{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 160px 0;
+    a{
+        text-decoration: none;
+        line-height: 30px;
+        font-size: 19px;
+    }
+}
+.prepage{
+    a{
+        padding-left: 12px;
+    }
+    &::before{
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        transform: rotate(180deg);
+        content: "";
+        background: url(../images/icon-arrow.svg) no-repeat 0 0;
+        background-size: 16px 16px;
+    }
+}
+.nextpage{
+    a{
+        padding-right: 12px;
+    }
+    &::after{
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        content: "";
+        background: url(../images/icon-arrow.svg) no-repeat 0 0;
+        background-size: 16px 16px;
+    }
+}
+.content-right{
+    width: 24%;
+}
+.hashtag-list{
+    display: flex;
+    flex-wrap: wrap;
+}
