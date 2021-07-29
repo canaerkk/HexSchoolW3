@@ -37,6 +37,11 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px; }
+  .blog-item a {
+    display: block;
+    width: 100%; }
+    .blog-item a img {
+      max-width: none; }
 
 .eng {
   display: block;
@@ -166,6 +171,12 @@ li.active {
       line-height: 21px;
       font-size: 14px; }
       .blog-info a:hover {
-        color: #650300; } }
+        color: #650300; }
+  .pager {
+    margin-bottom: 96px; }
+    .pager li a {
+      line-height: 27px;
+      font-size: 18px;
+      padding: 4.5px 12px; } }
 
 /*# sourceMappingURL=blog.css.map */
