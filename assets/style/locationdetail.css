@@ -148,13 +148,19 @@ Location通用項目
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 160px; }
+
+.storeitem {
+  margin-bottom: 20px; }
 
 .store-list {
-  width: 38%; }
+  width: 38%;
+  margin-bottom: 0; }
 
 .map {
-  width: 60%; }
+  width: 60%;
+  margin-top: 32px; }
   .map iframe {
     width: 100%;
     height: 98%; }
@@ -167,8 +173,7 @@ Location通用項目
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0; }
+            flex-direction: column; }
   .store-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,8 +188,7 @@ Location通用項目
     .store-item div {
       width: 48%; }
   .store-list {
-    width: 100%;
-    margin-bottom: 32px; }
+    width: 100%; }
   .store-right h3 {
     line-height: 24px;
     font-size: 16px;
@@ -199,6 +203,8 @@ Location通用項目
     height: 422px; } }
 
 @media (max-width: 767px) {
+  .storesheet {
+    margin-bottom: 56px; }
   .store-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -207,6 +213,7 @@ Location通用項目
     .store-item div {
       width: 100%; }
   .map {
+    margin-top: 16px;
     height: 211px; } }
 
 /*# sourceMappingURL=locationdetail.css.map */

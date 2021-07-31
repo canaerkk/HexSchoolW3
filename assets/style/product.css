@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* 處理container RWD */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 914px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 737px;
+      padding: 0 7.5px; } }
+
+/*
+header 區塊 PC版
+*/
+.header {
+  background-color: #AA0601;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 88px; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu-item {
+  min-width: 80px;
+  margin-right: 64px; }
+  .menu-item a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    line-height: 30px; }
+    .menu-item a:hover {
+      color: #DEE2E6; }
+
+/*
+header 區塊 Tablet版
+*/
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 39px; }
+  .menu-item {
+    margin-right: 40px; } }
+
+.menu-item-last {
+  margin-right: 0px; }
+
+/*
+header 區塊 Mobile版
+*/
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0; }
+  .bannerimg {
+    padding: 10px 0; }
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .menu-item {
+    margin: 0;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 50%; }
+    .menu-item a {
+      line-height: 45px;
+      padding: 8px 0; } }
+
+/*
+footer區塊 PC版
+*/
+.footer {
+  background-color: #AA0601; }
+
+.footerinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #FFF; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-menu-item {
+  margin-right: 48px; }
+  .footer-menu-item a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 24px; }
+    .footer-menu-item a:hover {
+      color: #DEE2E6; }
+
+.soical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 32px 0 24px 0; }
+  .soical li {
+    margin-left: 32px; }
+
+.contactinfo {
+  padding-bottom: 21px; }
+  .contactinfo li img {
+    height: 36px; }
+  .contactinfo li a {
+    padding-left: 22px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 54px;
+    text-decoration: none; }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .copyright p {
+    color: #fff;
+    line-height: 24px;
+    padding: 20px 0 27px 0; }
+
+.copyright-zh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.copyright-zh-item a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 48px;
+  line-height: 21px;
+  font-size: 14px; }
+  .copyright-zh-item a:hover {
+    color: #DEE2E6; }
+
+/*
+footer區塊 Tablet版
+*/
+@media (max-width: 992px) {
+  .footer-menu-item {
+    margin-right: 40px; }
+  .soical-item img {
+    height: 24px; }
+  .contactinfo {
+    padding-bottom: 16px;
+    width: 100%; }
+    .contactinfo li img {
+      height: 18px; }
+    .contactinfo li a {
+      padding-left: 11px;
+      font-size: 20px;
+      line-height: 30px; }
+  .copyright-zh-item a {
+    padding-left: 24px; } }
+
+/*
+footer區塊 Mobile版
+*/
+@media (max-width: 767px) {
+  .footerinfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .footer-menu {
+    display: none; }
+  .contactinfo {
+    width: 59%;
+    padding-top: 25px; }
+    .contactinfo li a {
+      padding: 0 0 0 7.5px;
+      font-size: 16px; }
+  .soical {
+    margin-top: 0; }
+    .soical li {
+      margin-left: 24px; }
+  li.first {
+    margin-left: 0; }
+  .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 16px; }
+    .copyright p {
+      padding-bottom: 8px; }
+  .copyright-zh {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .copyright-zh-item {
+    padding: 0 0 8px 0; }
+    .copyright-zh-item a {
+      padding: 0; } }
+
+/*# sourceMappingURL=product.css.map */
