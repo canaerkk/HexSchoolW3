@@ -58,9 +58,18 @@ img {
   max-width: 100%;
   height: auto; }
 
+/* 處理container RWD */
 .container {
-  max-width: 1111px;
-  margin: 0 auto; }
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 914px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 737px;
+      padding: 0 7.5px; } }
 
 /*
 header 區塊 PC版
@@ -69,12 +78,11 @@ header 區塊 PC版
   background-color: #AA0601;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-.bannerimg {
-  height: 49px;
-  width: 100%;
-  margin: 30px 0 30px 80px; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 88px; }
 
 .menu {
   display: -webkit-box;
@@ -89,7 +97,7 @@ header 區塊 PC版
 
 .menu-item {
   min-width: 80px;
-  margin-right: 80px; }
+  margin-right: 64px; }
   .menu-item a {
     color: #fff;
     font-size: 20px;
@@ -99,19 +107,17 @@ header 區塊 PC版
     .menu-item a:hover {
       color: #DEE2E6; }
 
-.menu-item-last {
-  margin-right: 88px; }
-
 /*
 header 區塊 Tablet版
 */
 @media (max-width: 992px) {
-  .container {
-    width: 92%; }
-  .bannerimg {
-    margin-left: 39px; }
+  .header {
+    padding: 30px 39px; }
   .menu-item {
     margin-right: 40px; } }
+
+.menu-item-last {
+  margin-right: 0px; }
 
 /*
 header 區塊 Mobile版
@@ -121,21 +127,22 @@ header 區塊 Mobile版
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .bannerimg {
+            flex-direction: column;
     text-align: center;
-    margin: 10px auto; }
+    padding: 0; }
+  .bannerimg {
+    padding: 10px 0; }
   .menu {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .menu-item {
-    min-width: 50%;
     margin: 0;
     text-align: center;
-    height: 45px;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    width: 50%; }
     .menu-item a {
-      line-height: 45px; } }
+      line-height: 45px;
+      padding: 8px 0; } }
 
 /*
 footer區塊 PC版
@@ -203,7 +210,7 @@ footer區塊 PC版
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .copyright h3 {
+  .copyright p {
     color: #fff;
     line-height: 24px;
     padding: 20px 0 27px 0; }
@@ -274,7 +281,7 @@ footer區塊 Mobile版
         -ms-flex-align: start;
             align-items: flex-start;
     padding-bottom: 16px; }
-    .copyright h3 {
+    .copyright p {
       padding-bottom: 8px; }
   .copyright-zh {
     -webkit-box-orient: vertical;
