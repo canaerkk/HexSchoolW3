@@ -1,9 +1,19 @@
 $primary:#AA0601;
 $secondary:#DEE2E6;
 
+
+/* 處理container RWD */
 .container{
-    max-width: 1111px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
+    @media (max-width:992px) {
+        max-width: 914px;
+    }
+    @media (max-width:767px) {
+        max-width: 737px;
+        padding: 0 7.5px;
+    }
 }
 /*
 header 區塊 PC版
@@ -11,11 +21,8 @@ header 區塊 PC版
 .header{
     background-color: $primary;
     display: flex;
-}
-.bannerimg{
-    height: 49px;
-    width: 100%;
-    margin: 30px 0 30px 80px;
+    justify-content: space-between;
+    padding: 30px 88px;
 }
 .menu{
     display: flex;
@@ -24,7 +31,7 @@ header 區塊 PC版
 }
 .menu-item{
     min-width: 80px;
-    margin-right: 80px;
+    margin-right: 64px;
     a{
         color: #fff;
         font-size: 20px;
@@ -36,22 +43,20 @@ header 區塊 PC版
         }
     }
 }
-.menu-item-last{
-    margin-right: 88px;
-}
+
 /*
 header 區塊 Tablet版
 */
 @media (max-width:992px) {
-    .container{
-        width: 92%;
-    }
-    .bannerimg{
-        margin-left: 39px;    
+    .header{
+        padding: 30px 39px;
     }
     .menu-item{
         margin-right: 40px;
     }
+}
+.menu-item-last{
+    margin-right: 0px;
 }
 /*
 header 區塊 Mobile版
@@ -59,22 +64,23 @@ header 區塊 Mobile版
 @media (max-width:767px){
     .header{
         flex-direction: column;
+        text-align: center;
+        padding: 0;
     }
     .bannerimg{
-        text-align: center;
-        margin: 10px auto;
+        padding: 10px 0;
     }
     .menu{
         flex-wrap: wrap;
     }
     .menu-item{
-        min-width: 50%;
         margin: 0;
         text-align: center;
-        height: 45px;
         border: 1px solid #fff;
+        width: 50%;
         a{
             line-height: 45px;
+            padding: 8px 0;
         }
     }
 }
@@ -134,7 +140,7 @@ footer區塊 PC版
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h3{
+    p{
         color: #fff;
         line-height: 24px;
         padding: 20px 0 27px 0;
@@ -221,7 +227,7 @@ footer區塊 Mobile版
     .copyright{
         flex-direction: column;
         align-items: flex-start;
-        h3{
+        p{
             padding-bottom: 8px;
         }
         padding-bottom: 16px;
