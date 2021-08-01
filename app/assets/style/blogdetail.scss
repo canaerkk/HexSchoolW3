@@ -31,6 +31,7 @@ $hashtagtheme:#AA0601;
         line-height: 24px;
         text-decoration: none;
         color: #000;
+        padding-top: 8px;
     }
 }
 a.currentpage{
@@ -91,6 +92,7 @@ a.hashtag{
 .sharetag{
     display: flex;
     align-items: center;
+    padding-top: 25px;
     a{
         padding-right: 20px;
         line-height: 30px;
@@ -144,14 +146,83 @@ a.hashtag{
     font-size: 28px;
     line-height: 42px;
     color: $hashtagtheme;
+    vertical-align: middle;
     font-weight: bold;
     &::before{
-        content: url(../images/icon-tag.svg);
+        background-image:url(../images/icon-tag.svg) ;
+        background-size: 28px 38px;
+        background-repeat: no-repeat;
+        display: inline-block ;
+        content: "";
         height: 28px;
-        vertical-align: middle;
+        width: 38px;
     }
 }
 .hashtag-list{
     display: flex;
     flex-wrap: wrap;
+}
+@media (max-width:992px) {
+    .submenu a{
+        font-size: 16px;
+        padding: 16px 32px 16px 0;
+    }
+    a.hashtag{
+        padding-right: 8px;
+        font-size: 16px;
+    }
+    .content-left{
+        h2{
+            font-size: 32px;
+        }
+    }
+    .eng{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    .article{
+        p{
+            padding: 16px 0 24px 0;
+            font-size: 16px;
+        }
+    }
+    .sharetag{
+        padding-top: 5px;
+        vertical-align: middle;
+        a{
+            font-size: 16px;
+            padding-right: 16px;
+            img{
+                height: 20px;
+            }
+        }
+    }
+    .pager{
+        margin: 16px 0 96px 0;
+        a{
+            font-size: 16px;
+        }
+    }
+    .prepage{
+        a{
+            padding-left: 8px;
+        }
+    }
+    .nextpage{
+        a{
+            padding-right: 8px;
+        }
+    }
+    .tagtitle{
+        font-size: 20px;
+        line-height: 42px;
+        &::before{
+            background-size: 14px 19px;
+            height: 14px;
+            width: 19px;
+            margin-bottom: 2px;
+        }
+    }
 }
