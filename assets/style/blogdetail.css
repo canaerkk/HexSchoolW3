@@ -38,7 +38,8 @@
   .breadcrumbs a {
     line-height: 24px;
     text-decoration: none;
-    color: #000; }
+    color: #000;
+    padding-top: 8px; }
 
 a.currentpage {
   color: #AA0601; }
@@ -47,13 +48,18 @@ a.hashtag {
   text-decoration: none;
   color: #AA0601;
   padding-right: 16px;
-  width: 100%; }
+  width: 100%;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: bold; }
   a.hashtag::before {
     content: "#"; }
 
 .article {
   border-bottom: 1px solid #000;
   padding-bottom: 20px; }
+  .article img {
+    width: 100%; }
 
 .article-hashtag {
   display: -webkit-box;
@@ -98,7 +104,8 @@ a.hashtag {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-top: 25px; }
   .sharetag a {
     padding-right: 20px;
     line-height: 30px;
@@ -148,11 +155,67 @@ a.hashtag {
 .content-right {
   width: 24%; }
 
+.tagtitle {
+  font-size: 28px;
+  line-height: 42px;
+  color: #AA0601;
+  vertical-align: middle;
+  font-weight: bold; }
+  .tagtitle::before {
+    background-image: url(../images/icon-tag.svg);
+    background-size: 28px 38px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    height: 28px;
+    width: 38px; }
+
 .hashtag-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+@media (max-width: 992px) {
+  .submenu a {
+    font-size: 16px;
+    padding: 16px 32px 16px 0; }
+  a.hashtag {
+    padding-right: 8px;
+    font-size: 16px; }
+  .content-left h2 {
+    font-size: 32px; }
+  .eng {
+    font-size: 16px; }
+  .date {
+    font-size: 14px; }
+  .article p {
+    padding: 16px 0 24px 0;
+    font-size: 16px; }
+  .sharetag {
+    padding-top: 5px;
+    vertical-align: middle; }
+    .sharetag a {
+      font-size: 16px;
+      padding-right: 16px; }
+      .sharetag a img {
+        height: 20px; }
+  .pager {
+    margin: 16px 0 96px 0; }
+    .pager a {
+      font-size: 16px; }
+  .prepage a {
+    padding-left: 8px; }
+  .nextpage a {
+    padding-right: 8px; }
+  .tagtitle {
+    font-size: 20px;
+    line-height: 42px; }
+    .tagtitle::before {
+      background-size: 14px 19px;
+      height: 14px;
+      width: 19px;
+      margin-bottom: 2px; } }
 
 /*# sourceMappingURL=blogdetail.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.css","index.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;CDGC;ACAD;EACI,UAAU,EAAA","file":"index.css","sourcesContent":["@charset \"UTF-8\";\n/*\n    首頁會用到的CSS先保留\n*/\n.h1 {\n  color: red; }\n","/*\n    首頁會用到的CSS先保留\n*/\n.h1{\n    color: red;\n}"]}
+{"version":3,"sources":["index.css","index.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;CDGC;ACAD;EACI,UAAU,EAAA","file":"index.css","sourcesContent":["@charset \"UTF-8\";\n/*\r\n    首頁會用到的CSS先保留\r\n*/\n.h1 {\n  color: red; }\n","/*\r\n    首頁會用到的CSS先保留\r\n*/\r\n.h1{\r\n    color: red;\r\n}"]}
