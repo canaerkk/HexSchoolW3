@@ -27,11 +27,12 @@ $hashtagtheme:#AA0601;
 }
 .breadcrumbs{
     width: 100%;
+    display: block;
+    margin-top: 8px;
     a{
         line-height: 24px;
         text-decoration: none;
         color: #000;
-        padding-top: 8px;
     }
 }
 a.currentpage{
@@ -227,6 +228,53 @@ a.hashtag{
             height: 14px;
             width: 19px;
             margin-bottom: 2px;
+        }
+    }
+}
+@media (max-width:767px) {
+    .submenu{
+        li{
+            width: 25%;
+            text-align: center;
+            a{
+                padding: 16px 0;
+            }
+        }
+    }
+    .searchicon{
+        display: none;
+    }
+    .content-left{
+        width: 100%;
+    }
+    .content-right{
+        order: 1;
+        width: 70%;
+        margin-bottom: 56px;
+    }
+    .pager{
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    .prepage{
+        a{
+            padding-left: 4px;
+        }
+    }
+    .nextpage{
+        a{
+            padding-left: 4px;
+        }
+        &::before{
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            content: "";
+            background: url(../images/icon-arrow.svg) no-repeat 0 0;
+            background-size: 16px 16px;
+        }
+        &::after{
+            background: none;
         }
     }
 }
